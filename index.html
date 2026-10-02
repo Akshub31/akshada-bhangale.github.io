@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Akshada Bhangale | SAP S/4HANA Professional</title>
+
+  <meta name="description" content="Portfolio of Akshada Bhangale, SAP professional with 3+ years of experience at Infosys, specializing in SAP S/4HANA, ABAP, Fiori/UI5, OData and SAP integration.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --primary: #0a6ed1;
+      --dark: #081525;
+      --text: #1d2939;
+      --muted: #667085;
+      --light: #f5f8fc;
+      --white: #ffffff;
+      --border: #e4eaf1;
+      --accent: #4db8ff;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(8, 21, 37, 0.97);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav-container {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      color: white;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #dce8f5;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      color: white;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(77,184,255,0.20), transparent 28%),
+        linear-gradient(135deg, #06101e, #0b2743 55%, #063f70);
+      padding-top: 72px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 7px 14px;
+      border: 1px solid rgba(77,184,255,0.45);
+      border-radius: 30px;
+      color: #9edcff;
+      background: rgba(77,184,255,0.08);
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: clamp(44px, 7vw, 78px);
+      line-height: 1.05;
+      margin-bottom: 18px;
+      letter-spacing: -2px;
+    }
+
+    .hero h1 span {
+      color: var(--accent);
+    }
+
+    .hero h2 {
+      font-size: clamp(21px, 3vw, 32px);
+      font-weight: 400;
+      color: #d7e7f7;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      color: #b9cde0;
+      font-size: 17px;
+      margin-bottom: 32px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 23px;
+      border-radius: 7px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #1984e6;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid #6285a5;
+      color: white;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* GENERAL */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      margin-bottom: 45px;
+    }
+
+    .section-title .small {
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      color: var(--dark);
+    }
+
+    .section-title p {
+      color: var(--muted);
+      max-width: 700px;
+      margin-top: 8px;
+    }
+
+    /* ABOUT */
+
+    .about {
+      background: var(--light);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .about-text p {
+      margin-bottom: 18px;
+      color: #475467;
+    }
+
+    .profile-card {
+      background: white;
+      padding: 28px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 35px rgba(0,0,0,0.05);
+    }
+
+    .profile-card h3 {
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .profile-item {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .profile-item:last-child {
+      border-bottom: none;
+    }
+
+    .profile-item strong {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* EXPERIENCE */
+
+    .experience-card {
+      border-left: 4px solid var(--primary);
+      padding: 0 0 0 28px;
+      max-width: 950px;
+    }
+
+    .experience-card h3 {
+      font-size: 25px;
+      color: var(--dark);
+    }
+
+    .company {
+      color: var(--primary);
+      font-weight: 700;
+      margin: 5px 0 3px;
+    }
+
+    .date {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .experience-card ul {
+      padding-left: 20px;
+      color: #475467;
+    }
+
+    .experience-card li {
+      margin-bottom: 9px;
+    }
+
+    /* SKILLS */
+
+    .skills {
+      background: var(--light);
+    }
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 25px;
+      transition: 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      border-color: #b8d9f4;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    }
+
+    .skill-card h3 {
+      color: var(--dark);
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      background: #edf6ff;
+      color: #07599e;
+      padding: 6px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    /* PROJECTS */
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .project {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: white;
+    }
+
+    .project-number {
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .project h3 {
+      margin-bottom: 12px;
+      color: var(--dark);
+    }
+
+    .project p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* EDUCATION */
+
+    .education {
+      background: var(--light);
+    }
+
+    .education-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 30px;
+      max-width: 850px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.04);
+    }
+
+    .education-card h3 {
+      color: var(--dark);
+      font-size: 23px;
+      margin-bottom: 8px;
+    }
+
+    .education-card .degree {
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .education-card p {
+      color: var(--muted);
+      margin-top: 5px;
+    }
+
+    /* LANGUAGES */
+
+    .language-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .language {
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .language strong {
+      display: block;
+      color: var(--dark);
+    }
+
+    .language span {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+    }
+
+    .contact .section-title h2 {
+      color: white;
+    }
+
+    .contact .section-title p {
+      color: #aebfd0;
+      margin: 10px auto 0;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .contact-box {
+      border: 1px solid #29425a;
+      border-radius: 8px;
+      padding: 13px 20px;
+      color: #d8e5f1;
+      transition: 0.3s;
+    }
+
+    .contact-box:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    footer {
+      background: #050d16;
+      color: #77899b;
+      text-align: center;
+      padding: 22px;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .about-grid,
+      .skill-grid,
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .language-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero h1 {
+        font-size: 48px;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+    }
+
+    @media (max-width: 500px) {
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero h2 {
+        font-size: 21px;
+      }
+
+      .language-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <nav>
+    <div class="container nav-container">
+
+      <a href="#home" class="logo">
+        AKSHADA<span>.</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+
+  <section class="hero" id="home">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <div class="badge">
+          SAP Professional • 3+ Years Experience
+        </div>
+
+        <h1>
+          Akshada <span>Bhangale</span>
+        </h1>
+
+        <h2>
+          SAP S/4HANA | ABAP | Fiori/UI5 | OData
+        </h2>
+
+        <p>
+          SAP professional with 3+ years of experience at Infosys,
+          working across SAP application development, enhancements,
+          troubleshooting, integration and production support.
+        </p>
+
+        <div class="buttons">
+
+          <a href="#experience" class="btn btn-primary">
+            View Experience
+          </a>
+
+          <a href="#contact" class="btn btn-outline">
+            Contact Me
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section class="about" id="about">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <div class="small">
+          About Me
+        </div>
+
+        <h2>
+          SAP Professional
+        </h2>
+
+      </div>
+
+
+      <div class="about-grid">
+
+        <div class="about-text">
+
+          <p>
+            I am an SAP professional with more than 3 years of
+            experience at Infosys Ltd., working in enterprise IT
+            delivery environments for global clients.
+          </p>
+
+          <p>
+            My experience includes SAP S/4HANA, ABAP, Fiori/UI5,
+            OData services, CDS Views, APIs and SAP integration
+            concepts.
+          </p>
+
+          <p>
+            I have worked across application development,
+            enhancements, debugging, production support,
+            incident management, testing and technical
+            documentation.
+          </p>
+
+          <p>
+            I hold a Bachelor of Engineering degree in
+            Electronics & Telecommunication Engineering and
+            am interested in SAP opportunities in Germany.
+          </p>
+
+        </div>
+
+
+        <div class="profile-card">
+
+          <h3>
+            Professional Profile
+          </h3>
+
+          <div class="profile-item">
+            <strong>Current Focus</strong>
+            SAP S/4HANA
+          </div>
+
+          <div class="profile-item">
+            <strong>Experience</strong>
+            3+ Years
+          </div>
+
+          <div class="profile-item">
+            <strong>Previous Employer</strong>
+            Infosys Ltd.
+          </div>
+
+          <div class="profile-item">
+            <strong>Previous Role</strong>
+            Senior Systems Engineer
+          </div>
+
+          <div class="profile-item">
+            <strong>Location</strong>
+            Germany
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EXPERIENCE -->
+
+  <section id="experience">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <div class="small">
+          Experience
+        </div>
+
+        <h2>
+          Professional Experience
+        </h2>
+
+      </div>
+
+
+      <div class="experience-card">
+
+        <h3>
+          Senior Systems Engineer
+        </h3>
+
+        <div class="company">
+          Infosys Ltd.
+        </div>
+
+        <div class="date">
+          3+ Years | Enterprise SAP Delivery
+        </div>
+
+
+        <ul>
+
+          <li>
+            Supported and developed SAP S/4HANA applications
+            for global clients across development, enhancements,
+            maintenance and production support.
+          </li>
+
+          <li>
+            Developed and maintained ABAP programs and technical
+            objects, including debugging, validations and data
+            processing.
+          </li>
+
+          <li>
+            Worked with SAP Fiori/UI5, OData services,
+            CDS Views and APIs for SAP application development
+            and enhancement activities.
+          </li>
+
+          <li>
+            Supported SAP-to-external-system integrations and
+            investigated interface-related issues.
+          </li>
+
+          <li>
+            Performed root-cause analysis, defect resolution,
+            testing, deployment and post-production validation.
+          </li>
+
+          <li>
+            Managed incidents, service requests and change
+            requests while meeting defined SLA requirements.
+          </li>
+
+          <li>
+            Collaborated with functional consultants,
+            developers, QA teams and international stakeholders.
+          </li>
+
+          <li>
+            Worked within Agile/Scrum environments and
+            participated in sprint planning, reviews and
+            retrospectives.
+          </li>
+
+          <li>
+            Prepared technical documentation, test cases,
+            implementation notes and knowledge-transfer material.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SKILLS -->
+
+  <section class="skills" id="skills">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <div class="small">
+          Technical Expertise
+        </div>
+
+        <h2>
+          SAP Skills
+        </h2>
+
+        <p>
+          Technologies and technical areas from my SAP
+          development and support experience.
+        </p>
+
+      </div>
+
+
+      <div class="skill-grid">
+
+
+        <div class="skill-card">
+
+          <h3>
+            SAP Platform
+          </h3>
+
+          <div class="tags">
+
+            <span class="tag">
+              SAP S/4HANA
+            </span>
+
+            <span class="tag">
+              SAP ERP
+            </span>
+
+            <span class="tag">
+              SAP Application Support
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <h3>
+            ABAP Development
+          </h3>
+
+          <div class="tags">
+
+            <span class="tag">
+              ABAP
+            </span>
+
+            <span class="tag">
+              ABAP Objects
+            </span>
+
+            <span class="tag">
+              Debugging
+            </span>
+
+            <span class="tag">
+              Data Processing
+            </span>
+
+            <span class="tag">
+              Enhancements
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <h3>
+            SAP Fiori & UI
+          </h3>
+
+          <div class="tags">
+
+            <span class="tag">
+              SAP Fiori
+            </span>
+
+            <span class="tag">
+              SAPUI5
+            </span>
+
+            <span class="tag">
+              OData
+            </span>
+
+            <span class="tag">
+              UI Integration
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <h3>
+            SAP Data & APIs
+          </h3>
+
+          <div class="tags">
+
+            <span class="tag">
+              CDS Views
+            </span>
+
+            <span class="tag">
+              OData Services
+            </span>
+
+            <span class="tag">
+              REST APIs
+            </span>
+
+            <span class="tag">
+              API Integration
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <h3>
+            Integration
+          </h3>
+
+          <div class="tags">
+
+            <span class="tag">
+              SAP Integration
+            </span>
+
+            <span class="tag">
+              External Systems
+            </span>
+
+            <span class="tag">
+              Interface Troubleshooting
+            </span>
+
+            <span class="tag">
+              API-based Communication
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <h3>
+            Delivery & Support
+          </h3>
+
+          <div class="tags">
+
+            <span class="tag">
+              Agile/Scrum
+            </span>
+
+            <span class="tag">
+              SDLC
+            </span>
+
+            <span class="tag">
+              Testing
+            </span>
+
+            <span class="tag">
+              Production Support
+            </span>
+
+            <span class="tag">
+              Root Cause Analysis
+            </span>
+
+            <span class="tag">
+              Incident Management
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROJECTS -->
+
+  <section id="projects">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <div class="small">
+          Selected Work
+        </div>
+
+        <h2>
+          Projects & Contributions
+        </h2>
+
+      </div>
+
+
+      <div class="project-grid">
+
+
+        <div class="project">
+
+          <div class="project-number">
+            01
+          </div>
+
+          <h3>
+            SAP S/4HANA Development
+          </h3>
+
+          <p>
+            Supported SAP S/4HANA applications through technical
+            development, enhancements, debugging, testing and
+            application maintenance.
+          </p>
+
+        </div>
+
+
+        <div class="project">
+
+          <div class="project-number">
+            02
+          </div>
+
+          <h3>
+            ABAP Development & Support
+          </h3>
+
+          <p>
+            Developed and maintained ABAP technical objects,
+            performed debugging and supported application
+            enhancements and defect resolution.
+          </p>
+
+        </div>
+
+
+        <div class="project">
+
+          <div class="project-number">
+            03
+          </div>
+
+          <h3>
+            SAP Integration
+          </h3>
+
+          <p>
+            Supported SAP integration with external enterprise
+            systems using API and OData-based communication
+            concepts.
+          </p>
+
+        </div>
+
+
+        <div class="project">
+
+          <div class="project-number">
+            04
+          </div>
+
+          <h3>
+            Production Support
+          </h3>
+
+          <p>
+            Investigated incidents, performed root-cause analysis,
+            coordinated technical resolution and supported
+            releases and post-production validation.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EDUCATION -->
+
+  <section class="education" id="education">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <div class="small">
+          Education
+        </div>
+
+        <h2>
+          Academic Background
+        </h2>
+
+      </div>
+
+
+      <div class="education-card">
+
+        <h3>
+          Bachelor of Engineering
+        </h3>
+
+        <div class="degree">
+          Electronics & Telecommunication Engineering
+        </div>
+
+        <p>
+          Dr. D.Y. Patil Institute of Engineering,
+          Management and Research
+        </p>
+
+        <p>
+          Pune, India
+        </p>
+
+        <p>
+          2018 – 2022
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LANGUAGES -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <div class="small">
+          Languages
+        </div>
+
+        <h2>
+          Communication
+        </h2>
+
+      </div>
+
+
+      <div class="language-grid">
+
+
+        <div class="language">
+
+          <strong>
+            English
+          </strong>
+
+          <span>
+            Professional
+          </span>
+
+        </div>
+
+
+        <div class="language">
+
+          <strong>
+            German
+          </strong>
+
+          <span>
+            A2 – Basic
+          </span>
+
+        </div>
+
+
+        <div class="language">
+
+          <strong>
+            Hindi
+          </strong>
+
+          <span>
+            Professional
+          </span>
+
+        </div>
+
+
+        <div class="language">
+
+          <strong>
+            Marathi
+          </strong>
+
+          <span>
+            Native
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="contact">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <div class="small" style="color:#6fc6ff;">
+          Get In Touch
+        </div>
+
+        <h2>
+          Let's Connect
+        </h2>
+
+        <p>
+          Interested in SAP opportunities, collaboration,
+          or professional networking? Feel free to connect.
+        </p>
+
+      </div>
+
+
+      <div class="contact-info">
+
+
+        <a
+          class="contact-box"
+          href="mailto:akshadabhangale3@gmail.com"
+        >
+          📧 Email
+        </a>
+
+
+        <a
+          class="contact-box"
+          href="https://www.linkedin.com/in/akshada-bhangale-67a602197/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          🔗 LinkedIn
+        </a>
+
+
+        <a
+          class="contact-box"
+          href="Akshada_Bhangale_CV.pdf"
+          target="_blank"
+        >
+          📄 Download CV
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+    © 2026 Akshada Bhangale · SAP Professional
+  </footer>
+
+
+</body>
+</html>
